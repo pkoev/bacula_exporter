@@ -66,7 +66,7 @@ const (
 
 // DB info
 const (
-	DB_FORMAT = "user=%s password=%s host=%s port=%s dbname=%s sslmode=%s"
+	DB_FORMAT = "%s:%s@tcp(%s:%s)/%s"
 )
 
 // ////////////////////////////////////////////////////////////////////////////////// //
@@ -211,8 +211,7 @@ func buildConnectionString() string {
 		knf.GetS(DB_PASSWORD),
 		knf.GetS(DB_HOST),
 		knf.GetS(DB_PORT),
-		knf.GetS(DB_NAME),
-		knf.GetS(DB_SSLMODE),
+		knf.GetS(DB_NAME)
 	)
 }
 
