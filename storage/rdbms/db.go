@@ -3,7 +3,7 @@ package rdbms
 // ////////////////////////////////////////////////////////////////////////////////// //
 
 import (
-	"database/sql"
+	"github.com/jmoiron/sqlx"
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -25,14 +25,14 @@ type Datastore interface {
 }
 
 type DB struct {
-	*sql.DB
+	*sqlx.DB
 }
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 
 // NewDB create new DB struct by datasource connection string with given provider
 func NewDB(datasource string) (*DB, error) {
-	db, err := sql.Open("mysql", datasource)
+	db, err := sqlx.Open("mysql", datasource)
 
 	if err != nil {
 		return nil, err
