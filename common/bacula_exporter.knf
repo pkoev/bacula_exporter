@@ -15,16 +15,16 @@
   name: bacula
 
   # Username
-  username: bacula
+  username: root
 
   # Password
-  password: keepinsecret
+  password: 
 
   # IP address or FQDN
-  host: db.example.tld
+  host: localhost
 
   # Port
-  port: 5432
+  port: 3306
 
   # SSL mode
   sslmode: disable
