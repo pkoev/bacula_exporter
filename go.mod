@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/avast/retry-go v3.0.0+incompatible
 	github.com/go-sql-driver/mysql v1.6.0
+	github.com/jmoiron/sqlx v1.3.5
 	github.com/prometheus/client_golang v1.14.0
 	pkg.re/essentialkaos/ek.v12 v12.41.0+incompatible
 )

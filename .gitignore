@@ -18,3 +18,4 @@ bacula_exporter
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+common/bacula_exporter.knf
