@@ -211,7 +211,7 @@ func buildConnectionString() string {
 		knf.GetS(DB_PASSWORD),
 		knf.GetS(DB_HOST),
 		knf.GetS(DB_PORT),
-		knf.GetS(DB_NAME)
+		knf.GetS(DB_NAME),
 	)
 }
 
